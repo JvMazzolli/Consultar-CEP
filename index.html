@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorando a API Fetch para Consulta de CEP e Local Storage
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Pesquisar CEP</h1>
+
+        <input type="text" id="cep" placeholder="Digite o CEP">
+        <button onclick="consultaCep()">Pesquisar</button>
+
+        <div id="resultado"></div>
+        <div id="historico">
+            <h2>CEPs já pesquisados</h2>
+            <ul id="listaCEPs"></ul>
+        </div>
+    </div>
+    <input type="text" id="inputCep" readonly>
+    <input type="text" id="inputLogradouro" readonly>
+    <input type="text" id="inputBairro" readonly>
+    <input type="text" id="inputUf" readonly>
+    <input type="text" id="inputIbge" readonly>
+    <input type="text" id="inputCidade" readonly>
+    <input type="text" id="inputComplemento" readonly>
+    <button onclick="salvarCep()">Salvar</button>
+    <script src="script.js"></script>
+</body>
+
+</html>
